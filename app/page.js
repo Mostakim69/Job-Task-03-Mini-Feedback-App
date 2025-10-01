@@ -1,7 +1,7 @@
 import FeedbackForm from "./components/FeedbackForm";
 import FeedbackList from "./components/FeedbackList";
 
-export const dynamic = "force-dynamic"; // optional: always render server-side
+export const dynamic = "force-dynamic";
 
 async function getFeedbacks() {
   const res = await fetch("http://localhost:3000/api/feedback", {
@@ -15,7 +15,7 @@ export default async function Page() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-6">💬 Mini Feedback App</h1>
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">💬 Mini Feedback App</h1>
 
       {/* Feedback form (still client component) */}
       <FeedbackForm />
