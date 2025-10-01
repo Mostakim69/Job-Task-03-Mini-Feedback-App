@@ -4,7 +4,7 @@ import FeedbackList from "./components/FeedbackList";
 export const dynamic = "force-dynamic";
 
 async function getFeedbacks() {
-  const res = await fetch("http://localhost:3000/api/feedback", {
+  const res = await fetch("https://mini-feedback-app-three.vercel.app/api/feedback", {
     cache: "no-store", // so it always fetches fresh data
   });
   return res.json();
