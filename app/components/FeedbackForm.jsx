@@ -69,7 +69,7 @@ export default function FeedbackForm({ onFeedbackSubmit }) {
         {form.feedback.length} / 20 characters minimum
       </p>
 
-      <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 hover:scale-105 active:scale-95 transition transform duration-300" >
+      <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 hover:scale-105 active:scale-95 transition transform duration-300 cursor-pointer" >
         Submit Feedback
       </button>
     </form>
